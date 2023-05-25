@@ -74,7 +74,7 @@ const Menu = ({ showMenu, setShowMenu }: IProps) => {
               <a href="https://maglit.me/" target="_blank" rel="noreferrer">
                 <div className="cursor-pointer rounded-lg bg-slate-900">
                   <img
-                    src="/maglit.png"
+                    src="./maglit.png"
                     alt="MagLit"
                     className="h-42 w-full rounded-t-lg object-cover"
                   />
@@ -91,7 +91,7 @@ const Menu = ({ showMenu, setShowMenu }: IProps) => {
               >
                 <div className="cursor-pointer rounded-lg bg-slate-900">
                   <img
-                    src="/please.jpg"
+                    src="./please.jpg"
                     alt="Please CLI"
                     className="h-42 w-full rounded-t-lg object-cover"
                   />
