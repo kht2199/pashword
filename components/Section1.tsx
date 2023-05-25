@@ -48,14 +48,14 @@ const Section1 = () => {
             background="transparent"
             ref={lottieRef}
             speed="1"
-            loop
-            autoplay
+            loop={true}
+            autoplay={true}
           ></lottie-player>
         </div>
       </div>
       <Illustration
         className="p-3 md:w-[700px]"
-        source="/why-pashword.svg"
+        source="./why-pashword.svg"
         sectionId="why-pashword"
       />
     </section>

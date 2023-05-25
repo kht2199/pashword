@@ -1,24 +1,23 @@
 import PASSWORD_LENGTH from "../constants/passwordLength";
 import Illustration from "../components/Illustration";
-import { AiOutlineLeftCircle } from "react-icons/ai";
+import {AiOutlineLeftCircle} from "react-icons/ai";
 import HeroSection from "../components/HeroSection";
-import { FiArrowDownCircle } from "react-icons/fi";
-import { ToastContainer } from "react-toastify";
+import {FiArrowDownCircle} from "react-icons/fi";
+import {ToastContainer} from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Section1 from "../components/Section1";
 import Section2 from "../components/Section2";
 import Section3 from "../components/Section3";
 import Footer from "../components/Footer";
-import React, { MouseEventHandler, useEffect, useState } from "react";
+import React, {useEffect, useState} from "react";
 import Menu from "../components/Menu";
-import type { NextPage } from "next";
+import type {NextPage} from "next";
 import FAQ from "../components/FAQ";
 
 let deferredPrompt: any;
 
 const Home: NextPage = () => {
   const [passwordLength, setPasswordLength] = useState(PASSWORD_LENGTH.LARGE);
-  const [realtimeMode, setRealtimeMode] = useState(false);
   const [installable, setInstallable] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
 
@@ -38,6 +37,7 @@ const Home: NextPage = () => {
     });
   }, []);
 
+  // noinspection JSUnusedLocalSymbols
   const handleInstallClick = (e: any) => {
     // Hide the app provided install promotion
     setInstallable(false);
@@ -91,13 +91,13 @@ const Home: NextPage = () => {
       <Section2 />
       <Illustration
         className="mx-auto px-5 pt-10 pb-10 md:px-20 lg:w-1/2 lg:px-0"
-        source="/with-without-pashword.png"
+        source="./with-without-pashword.png"
         sectionId="with-without-pashword"
       />
       <Section3 />
       <Illustration
         className="mt-20 mb-20 md:px-10"
-        source="/how-it-works.svg"
+        source="./how-it-works.svg"
         sectionId="how-it-works"
       />
       <FAQ />
