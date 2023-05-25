@@ -44,7 +44,7 @@ const Section1 = () => {
         </p>
         <div className="w-3/5 xs:w-2/5 md:w-80">
           <lottie-player
-            src="/animations/laptop_key_animation.json"
+            src="./animations/laptop_key_animation.json"
             background="transparent"
             ref={lottieRef}
             speed="1"
