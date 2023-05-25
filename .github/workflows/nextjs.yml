@@ -86,7 +86,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://kht2199.github.io/"
+      url: "https://kht2199.github.io/pashword/"
     runs-on: ubuntu-latest
     needs: build
     steps:
