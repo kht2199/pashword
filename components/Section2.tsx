@@ -22,12 +22,12 @@ const Section2 = () => {
       <div className="z-10 flex w-full flex-col items-center justify-center gap-10 px-2 sm:px-0 md:flex-row">
         <div className="w-4/5 xs:w-3/5 md:w-96">
           <lottie-player
-            src="/animations/password_lock_animation.json"
+            src="./animations/password_lock_animation.json"
             background="transparent"
             ref={ref}
             speed="1"
-            loop
-            autoplay
+            loop={true}
+            autoplay={true}
           ></lottie-player>
         </div>
         <p className="w-full px-5 text-center text-sm text-slate-300 xs:text-base sm:px-16 sm:text-2xl md:w-1/3 md:px-0 md:text-left">
